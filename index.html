@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css"/>
+    
+    <title>Bellissimo Pizza mobile</title>
+</head>
+<body onscroll="scroll()">
+    <div class="fixed-order-block-container">
+        <div class="text">
+            <p>Добавлено</p>
+            <p class="product-name" id="product-name">Беллиссимо большая, Хот-дог борт</p>
+        </div>
+        <img src="/imgs/pizza.png" alt="">
+    </div>
+    <a href="cart/index.html">
+        <div class="fixed-cart-container">
+            <img src="/imgs/shopping-cart.svg" alt="">
+            <div class="cart-count"><p>5</p></div>
+        </div>
+    </a>
+    <div class="main-container">
+        <header>
+            <nav class="navbar">
+                <div class="nav-items-block" id="nav-block">
+                    <div class="logo-container">
+                            <img src="imgs/logo.svg" alt="">
+                            <div class="logo-text">
+                                <h1>Bellissimo</h1>
+                                <h2>Pizza</h2>
+                            </div>
+                        <div class="burger-cancel" id="burger-cancel">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="nav-blocks location-block">
+                        <div class="current-location-container" id="location-list-activator">
+                            <img src="imgs/map-pin.svg" alt="">
+                            <p id="current-location-text">Ташкент</p>
+                            <img src="imgs/arrow.svg" alt="">
+                        </div>
+                        <div class="location-list" id="location-list">
+                            <p id="tashkent" name="tashkent" value="0">Ташкент</p>
+                            <p id="andijan" name="andijan" value="1">Андижан</p>
+                            <p id="samarkand" name="samarkand" value="2">Самарканд</p>
+                        </div>
+                    </div>
+                    <div class="hr"></div>
+                    <a href="log-in/log-in.html">
+                        <div class="nav-blocks log-in">
+                            <img src="imgs/log-in.svg" alt="">
+                            <p id="log-in" value="login">Войти</p>
+                        </div>
+                    </a>
+                    <a href="/index.html">
+                        <div class="nav-blocks menu">
+                            <img src="imgs/log-in.svg" alt="">
+                            <p id="log-in" value="login">Меню</p>
+                        </div>
+                    </a>
+                    <a href="construktor/construktor.html">
+                        <div class="nav-blocks construction">
+                            <img src="imgs/log-in.svg" alt="">
+                            <p id="log-in" value="login">Конструктор половинок</p>
+                        </div>
+                    </a>
+                    <a href="restaurant/restaurant.html">
+                        <div class="nav-blocks restaurants">
+                            <img src="imgs/log-in.svg" alt="">
+                            <p id="log-in" value="login">Рестораны</p>
+                        </div>
+                    </a>
+                    <div class="language-container">
+                        <div class="uz language" id="uz">uz</div>
+                        <div class="ru language active" id="ru">ru</div>
+                    </div>
+                    <a href="#" class="call-us-con">
+                        <div class="call-us">
+                            <img src="" alt="">
+                            <p>Позвонить нам</p>
+                        </div>
+                    </a>
+                    <a href="" class="feedback">Есть жалоба?</a>
+                </div>
+                <div class="burger-container" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <p>Меню</p>
+                <a href="cart/index.html">
+                    <div class="basket">
+                        <img src="imgs/shopping-cart.svg" alt="">
+                        <div class="cart-count">
+                            <p id="cart-count">5</p>
+                        </div>
+                    </div>
+                </a>
+                
+            </nav>
+            <!-- <div class="slider">
+                <img src="" alt="">
+            </div> -->
+        </header>
+        <a name="pizza"></a>
+        <section class="pizza-list-container">
+            <div class="list-title">
+                <h2>Пицца</h2>
+            </div>
+            <a href="pizza-buy-blocks/alfredo.html">
+                <div class="pizza-list">
+                    <img src="imgs/B14.jpg" alt="">
+                    <div class="description">
+                        <h3>чиккен карри</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni iure, facere veritatis neque quia!</p>
+                        <h3>от 47 000 сум</h3>
+                    </div>
+                </div>
+            </a>
+            <div class="pizza-list">
+                <img src="imgs/B14.jpg" alt="">
+                <div class="description">
+                    <h3>чиккен карри</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni iure, facere veritatis neque quia!</p>
+                    <h3>от 47 000 сум</h3>
+                </div>
+            </div>
+            <div class="pizza-list">
+                <img src="imgs/B14.jpg" alt="">
+                <div class="description">
+                    <h3>чиккен карри</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni iure, facere veritatis neque quia!</p>
+                    <h3>от 47 000 сум</h3>
+                </div>
+            </div>
+            <div class="pizza-list">
+                <img src="imgs/B14.jpg" alt="">
+                <div class="description">
+                    <h3>чиккен карри</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni iure, facere veritatis neque quia!</p>
+                    <h3>от 47 000 сум</h3>
+                </div>
+            </div>
+            <div class="pizza-list">
+                <img src="imgs/B14.jpg" alt="">
+                <div class="description">
+                    <h3>чиккен карри</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni iure, facere veritatis neque quia!</p>
+                    <h3>от 47 000 сум</h3>
+                </div>
+            </div>
+            <div class="pizza-list">
+                <img src="imgs/B14.jpg" alt="">
+                <div class="description">
+                    <h3>чиккен карри</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni iure, facere veritatis neque quia!</p>
+                    <h3>от 47 000 сум</h3>
+                </div>
+            </div>
+            <div class="pizza-list">
+                <img src="imgs/B14.jpg" alt="">
+                <div class="description">
+                    <h3>чиккен карри</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni iure, facere veritatis neque quia!</p>
+                    <h3>от 47 000 сум</h3>
+                </div>
+            </div>
+            <div class="pizza-list">
+                <img src="imgs/B14.jpg" alt="">
+                <div class="description">
+                    <h3>чиккен карри</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni iure, facere veritatis neque quia!</p>
+                    <h3>от 47 000 сум</h3>
+                </div>
+            </div>
+            <div class="pizza-list">
+                <img src="imgs/B14.jpg" alt="">
+                <div class="description">
+                    <h3>чиккен карри</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni iure, facere veritatis neque quia!</p>
+                    <h3>от 47 000 сум</h3>
+                </div>
+            </div>
+            <div class="pizza-list">
+                <img src="imgs/B14.jpg" alt="">
+                <div class="description">
+                    <h3>чиккен карри</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni iure, facere veritatis neque quia!</p>
+                    <h3>от 47 000 сум</h3>
+                </div>
+            </div>
+            <div class="pizza-list">
+                <img src="imgs/B14.jpg" alt="">
+                <div class="description">
+                    <h3>чиккен карри</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni iure, facere veritatis neque quia!</p>
+                    <h3>от 47 000 сум</h3>
+                </div>
+            </div>
+            <div class="pizza-list">
+                <img src="imgs/B14.jpg" alt="">
+                <div class="description">
+                    <h3>чиккен карри</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni iure, facere veritatis neque quia!</p>
+                    <h3>от 47 000 сум</h3>
+                </div>
+            </div>
+        </section>
+        <a name="garnir"></a>
+        <section class="pizza-list-container garnir-list-container">
+            <div class="list-title">
+                <h2>Закуски</h2>
+            </div>
+            <div class="pizza-list">
+                <img src="imgs/zakuska.png" alt="">
+                <div class="description">
+                    <h3>чиккен карри</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni iure, facere veritatis neque quia!</p>
+                    <h3>от 47 000 сум</h3>
+                </div>
+            </div>
+            <div class="pizza-list">
+                <img src="imgs/zakuska.png" alt="">
+                <div class="description">
+                    <h3>чиккен карри</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni iure, facere veritatis neque quia!</p>
+                    <h3>от 47 000 сум</h3>
+                </div>
+            </div>
+            <div class="pizza-list">
+                <img src="imgs/zakuska.png" alt="">
+                <div class="description">
+                    <h3>чиккен карри</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni iure, facere veritatis neque quia!</p>
+                    <h3>от 47 000 сум</h3>
+                </div>
+            </div>
+            <div class="pizza-list">
+                <img src="imgs/zakuska.png" alt="">
+                <div class="description">
+                    <h3>чиккен карри</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni iure, facere veritatis neque quia!</p>
+                    <h3>от 47 000 сум</h3>
+                </div>
+            </div>
+        </section>
+        <a name="salad"></a>
+        <section class="pizza-list-container salad-list-container">
+            <div class="list-title">
+                <h2>Салаты</h2>
+            </div>
+            <div class="pizza-list">
+                <img src="imgs/img.png" alt="">
+                <div class="description">
+                    <h3>чиккен карри</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni iure, facere veritatis neque quia!</p>
+                    <h3>от 47 000 сум</h3>
+                </div>
+            </div>
+            <div class="pizza-list">
+                <img src="imgs/img.png" alt="">
+                <div class="description">
+                    <h3>чиккен карри</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni iure, facere veritatis neque quia!</p>
+                    <h3>от 47 000 сум</h3>
+                </div>
+            </div>
+        </section>
+        <a name="drinks"></a>
+        <section class="pizza-list-container drinks-list-container">
+            <div class="list-title">
+                <h2>Напитки</h2>
+            </div>
+            <div class="pizza-list">
+                <img src="imgs/img.png" alt="">
+                <div class="description">
+                    <h3>чиккен карри</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni iure, facere veritatis neque quia!</p>
+                    <h3>от 47 000 сум</h3>
+                </div>
+            </div>
+            <div class="pizza-list">
+                <img src="imgs/img.png" alt="">
+                <div class="description">
+                    <h3>чиккен карри</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni iure, facere veritatis neque quia!</p>
+                    <h3>от 47 000 сум</h3>
+                </div>
+            </div>
+            <div class="pizza-list">
+                <img src="imgs/img.png" alt="">
+                <div class="description">
+                    <h3>чиккен карри</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni iure, facere veritatis neque quia!</p>
+                    <h3>от 47 000 сум</h3>
+                </div>
+            </div>
+            <div class="pizza-list">
+                <img src="imgs/img.png" alt="">
+                <div class="description">
+                    <h3>чиккен карри</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni iure, facere veritatis neque quia!</p>
+                    <h3>от 47 000 сум</h3>
+                </div>
+            </div>
+            <div class="pizza-list">
+                <img src="imgs/img.png" alt="">
+                <div class="description">
+                    <h3>чиккен карри</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni iure, facere veritatis neque quia!</p>
+                    <h3>от 47 000 сум</h3>
+                </div>
+            </div>
+            <div class="pizza-list">
+                <img src="imgs/img.png" alt="">
+                <div class="description">
+                    <h3>чиккен карри</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni iure, facere veritatis neque quia!</p>
+                    <h3>от 47 000 сум</h3>
+                </div>
+            </div>
+        </section>
+        <a name="desert"></a>
+        <section class="pizza-list-container desserts-list-container">
+            <div class="list-title">
+                <h2>Дессерты</h2>
+            </div>
+            <div class="pizza-list">
+                <img src="imgs/img.png" alt="">
+                <div class="description">
+                    <h3>чиккен карри</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni iure, facere veritatis neque quia!</p>
+                    <h3>от 47 000 сум</h3>
+                </div>
+            </div>
+            <div class="pizza-list">
+                <img src="imgs/img.png" alt="">
+                <div class="description">
+                    <h3>чиккен карри</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni iure, facere veritatis neque quia!</p>
+                    <h3>от 47 000 сум</h3>
+                </div>
+            </div>
+            <div class="pizza-list">
+                <img src="imgs/img.png" alt="">
+                <div class="description">
+                    <h3>чиккен карри</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni iure, facere veritatis neque quia!</p>
+                    <h3>от 47 000 сум</h3>
+                </div>
+            </div>
+        </section>
+        <a name="souce"></a>
+        <section class="pizza-list-container souce-list-container">
+            <div class="list-title">
+                <h2>Соусы</h2>
+            </div>
+            <div class="pizza-list">
+                <img src="imgs/img.png" alt="">
+                <div class="description">
+                    <h3>чиккен карри</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni iure, facere veritatis neque quia!</p>
+                    <h3>от 47 000 сум</h3>
+                </div>
+            </div>
+            <div class="pizza-list">
+                <img src="imgs/img.png" alt="">
+                <div class="description">
+                    <h3>чиккен карри</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni iure, facere veritatis neque quia!</p>
+                    <h3>от 47 000 сум</h3>
+                </div>
+            </div>
+            <div class="pizza-list">
+                <img src="imgs/img.png" alt="">
+                <div class="description">
+                    <h3>чиккен карри</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni iure, facere veritatis neque quia!</p>
+                    <h3>от 47 000 сум</h3>
+                </div>
+            </div>
+        </section>
+        <div class="fixed-menu-list-block">
+            <a href="#pizza">
+                <div class="pizza-menu-link link">
+                    <img src="" alt="">
+                    <p>Пицца</p>
+                </div>
+            </a>
+            <a href="#garnir">
+                <div class="garnir-menu-link link">
+                    <img src="" alt="">
+                    <p>Закуски</p>
+                </div>
+            </a>
+            <a href="#salad">
+                <div class="salad-menu-link link">
+                    <img src="" alt="">
+                    <p>Салаты</p>
+                </div>
+            </a>
+            <a href="#drinks">
+                <div class="drinks-menu-link link">
+                    <img src="" alt="">
+                    <p>Напитки</p>
+                </div>
+            </a>
+            <a href="#desert">
+                <div class="deserts-menu-link link">
+                    <img src="" alt="">
+                    <p>Дессерты</p>
+                </div>
+            </a>
+            <a href="#souce">
+                <div class="souce-menu-link link">
+                    <img src="" alt="">
+                    <p>Соусы</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

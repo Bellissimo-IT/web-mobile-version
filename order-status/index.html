@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/cart/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="didnt-get-bg"></div>
+    <div class="dindt-get-container">
+        <h3>Заказ еще не доставили?</h3>
+        <span>
+            <p>Доставщик находится в радиусе 500 метров. Он будет с минуты на минуту. Ожидайте, пожалуйста.
+                Если этого не произошло, позвоните на короткий номер <a href="tel:1000">1000</a></p>
+            
+        </span>
+        <button>Позвонить</button>
+    </div>
+    <header>
+        <nav class="navbar">
+            <div class="nav-items-block" id="nav-block">
+                <div class="logo-container">
+                        <img src="/imgs/logo.svg" alt="">
+                        <div class="logo-text">
+                            <h1>Bellissimo</h1>
+                            <h2>Pizza</h2>
+                        </div>
+                    <div class="burger-cancel" id="burger-cancel">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="nav-blocks location-block">
+                    <div class="current-location-container" id="location-list-activator">
+                        <img src="/imgs/map-pin.svg" alt="">
+                        <p id="current-location-text">Ташкент</p>
+                        <img src="/imgs/arrow.svg" alt="">
+                    </div>
+                    <div class="location-list" id="location-list">
+                        <p id="tashkent" name="tashkent" value="0">Ташкент</p>
+                        <p id="andijan" name="andijan" value="1">Андижан</p>
+                        <p id="samarkand" name="samarkand" value="2">Самарканд</p>
+                    </div>
+                </div>
+                <div class="hr"></div>
+                <a href="log-in/log-in.html">
+                    <div class="nav-blocks log-in">
+                        <img src="/imgs/log-in.svg" alt="">
+                        <p id="log-in" value="login">Войти</p>
+                    </div>
+                </a>
+                <div class="nav-blocks menu" onclick="cancel()">
+                    <img src="/imgs/log-in.svg" alt="">
+                    <p id="log-in" value="login">Меню</p>
+                </div>
+                <a href="construktor/construktor.html">
+                    <div class="nav-blocks construction">
+                        <img src="/imgs/log-in.svg" alt="">
+                        <p id="log-in" value="login">Конструктор половинок</p>
+                    </div>
+                </a>
+                <a href="restaurant/restaurant.html">
+                    <div class="nav-blocks restaurants">
+                        <img src="/imgs/log-in.svg" alt="">
+                        <p id="log-in" value="login">Рестораны</p>
+                    </div>
+                </a>
+                <div class="language-container">
+                    <div class="uz language" id="uz">uz</div>
+                    <div class="ru language active" id="ru">ru</div>
+                </div>
+                <a href="#" class="call-us-con">
+                    <div class="call-us">
+                        <img src="" alt="">
+                        <p>Позвонить нам</p>
+                    </div>
+                </a>
+                <a href="" class="feedback">Есть жалоба?</a>
+            </div>
+            <div class="burger-container" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <p>Статус заказа</p>
+            <div class="basket">
+                <img src="/imgs/shopping-cart.svg" alt="">
+                <div class="cart-count">
+                    <p id="cart-count">5</p>
+                </div>
+            </div>
+        </nav>
+        <!-- <div class="slider">
+            <img src="" alt="">
+        </div> -->
+    </header>
+    <div class="main-wrapper">
+        <div class="time-n-guarantee-block">
+            <div class="current-time">
+                <h3>44:45</h3>
+            </div>
+            <div class="guarantee">
+                <h6>Доставка за 45 минут, или пицца бесплатно</h6>
+            </div>
+        </div>
+        <div class="status-line">
+            <div class="status active"></div>
+            <div class="status"></div>
+            <div class="status"></div>
+            <div class="status"></div>
+            <div class="status"></div>
+        </div>
+        <div class="current-status-block active accepted">
+            <div class="current-status-text">
+                <h3>Принят</h3>
+                <p>Заказ обрабатывается оператором.</p>
+            </div>
+            <img src="imgs/approved.svg" alt="">
+        </div>
+        <div class="current-status-block cooking">
+            <div class="current-status-text">
+                <h3>Готовится</h3>
+                <p>Ваш заказ уже готовится.</p>
+            </div>
+            <img src="imgs/baking.svg" alt="">
+        </div>
+        <div class="current-status-block ready">
+            <div class="current-status-text">
+                <h3>Готов</h3>
+                <p>Ваш заказ готов и уже собирается.</p>
+            </div>
+            <img src="imgs/ready.svg" alt="">
+        </div>
+        <div class="current-status-block delivered active">
+            <div class="delivered-block">
+                <div class="current-status-text">
+                    <h3>Доставлен</h3>
+                    <p>Ваш заказ доставлен.</p>
+                </div>
+                <img src="imgs/pizza-deliver.svg" alt="">
+            </div>
+            <div class="btns">
+                <button class="didnt-get-order" onclick="didntGet()">Заказ не получен?</button>
+                <button class="my-orders">Мои заказы</button>
+            </div>
+        </div>
+        <div class="current-status-block on-the-road active">
+            <div class="block"><h3>В пути</h3><p>Мухиддин Азимов</p></div>
+            <div class="block"><a href="tel:1000"><img src="imgs/telephone.svg" alt=""> 1000</a><h5><img src="imgs/car.svg" alt=""> A01 | 123BC</h5></div>
+            <p class="last-text">Приблизительное время прибытия 18:35</p>
+        </div>
+        <div class="order-detail-block">
+            <h3>Детали заказа #154</h3>
+            <div class="order-block">
+                <div class="order-text">
+                    <h4>Пицца Bellissimo</h4>
+                    <p>Средняя, тонкое тесто</p>
+                </div>
+                <div class="order-price">
+                    <h5>78 000 сум</h5>
+                </div>
+                <div class="order-sum">
+                    <h5>1</h5>
+                </div>
+            </div>
+            <div class="order-block">
+                <div class="order-text">
+                    <h4>Пицца Гавайская</h4>
+                    <p>Большая, воздушное тесто</p>
+                </div>
+                <div class="order-price">
+                    <h5>64 000 сум</h5>
+                </div>
+                <div class="order-sum">
+                    <h5>1</h5>
+                </div>
+            </div>
+            <div class="order-block">
+                <div class="order-text">
+                    <h4>CocaCola 1.5 l</h4>
+                </div>
+                <div class="order-price">
+                    <h5>10 000 сум</h5>
+                </div>
+                <div class="order-sum">
+                    <h5>1</h5>
+                </div>
+            </div>
+            <div class="order-block">
+                <div class="order-text">
+                    <h4>Сырный соус</h4>
+                </div>
+                <div class="order-price">
+                    <h5>бесплатно</h5>
+                </div>
+                <div class="order-sum">
+                    <h5>1</h5>
+                </div>
+            </div>
+            <div class="sum-block">
+                <h4>Итого: 124 000 сум</h4>
+            </div>
+        </div>
+        <div class="order-address">
+            <h3>Адрес доставки</h3>
+            <h4>Юнусабадский район, 18 квартал, д. 30, кв 45</h4>
+        </div>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+</html>

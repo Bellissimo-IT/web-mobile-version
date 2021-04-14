@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+}
+
+.main-wrapper {
+    padding-bottom: 25px;
+    width: 100%;
+    max-width: 450px;
+    min-width: 400px;
+    margin: 0 auto;
+    position: relative;
+    .text {
+        padding: 0 20px;
+    }
+    .back-btn {
+        width: 50px;
+        height: 50px;
+        background: white;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        top: 10px;
+        left: 10px;
+        img {
+            padding: 0;
+            margin: 0;
+            display: block;
+            width: 18px;
+            height: auto;
+        }
+    }
+    img {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .product-name {
+        margin-bottom: 15px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 140%;
+        color: #323232;
+    }
+    .product-descritpion {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 150%;
+        color: #323232;
+        margin-bottom: 15px;
+    }
+    .choose-size-container {
+        h5 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 17px;
+            color: #c8c8c8;
+            margin-bottom: 10px;
+        }
+        .constract-block {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background: linear-gradient(180deg, #F8F8F8 0%, #F5F5F5 100%);
+            border-radius: 100px;
+            margin-bottom: 25px;
+            height: 40px;
+            padding: 0 3px;
+            align-items: center;
+            .type {
+                width: 100%;
+                text-align: center;
+                max-width: 33.33%;
+                background: #000;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: transparent;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 17px;
+                color: #c8c8c8;
+                height: calc(100% - 6px);
+                &.active {
+                    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+                    border-radius: 100px;
+                    background: white;
+                    color: #323232;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .price-n-cart-btn {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .price-block {
+            p {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 140%;
+                color: #323232;
+            }
+        }
+        button {
+            background: #00AB49;
+            box-shadow: 0px 15px 30px rgba(0, 171, 73, 0.25);
+            border-radius: 100px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 22px;
+            line-height: 17px;
+            color: #FFFFFF;
+            border: none;
+            padding: 16px;
+        }
+    }
+    .choose-type-wrapper {
+        &.one {
+            .type {
+                max-width: 100% !important;
+            }
+        }
+        &.two {
+            .type {
+                max-width: 50% !important;
+            }
+        }
+        &.three {
+            .type {
+                max-width: 33.33% !important;
+            }
+        }
+    }
+}

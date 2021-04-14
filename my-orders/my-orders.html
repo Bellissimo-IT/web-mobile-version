@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-items-block" id="nav-block">
+                <div class="logo-container">
+                        <img src="/imgs/logo.svg" alt="">
+                        <div class="logo-text">
+                            <h1>Bellissimo</h1>
+                            <h2>Pizza</h2>
+                        </div>
+                    <div class="burger-cancel" id="burger-cancel">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="nav-blocks location-block">
+                    <div class="current-location-container" id="location-list-activator">
+                        <img src="/imgs/map-pin.svg" alt="">
+                        <p id="current-location-text">Ташкент</p>
+                        <img src="/imgs/arrow.svg" alt="">
+                    </div>
+                    <div class="location-list" id="location-list">
+                        <p id="tashkent" name="tashkent" value="0">Ташкент</p>
+                        <p id="andijan" name="andijan" value="1">Андижан</p>
+                        <p id="samarkand" name="samarkand" value="2">Самарканд</p>
+                    </div>
+                </div>
+                <div class="hr"></div>
+                <a href="log-in/log-in.html">
+                    <div class="nav-blocks log-in">
+                        <img src="/imgs/log-in.svg" alt="">
+                        <p id="log-in" value="login">Войти</p>
+                    </div>
+                </a>
+                <div class="nav-blocks menu" onclick="cancel()">
+                    <img src="/imgs/log-in.svg" alt="">
+                    <p id="log-in" value="login">Меню</p>
+                </div>
+                <a href="construktor/construktor.html">
+                    <div class="nav-blocks construction">
+                        <img src="/imgs/log-in.svg" alt="">
+                        <p id="log-in" value="login">Конструктор половинок</p>
+                    </div>
+                </a>
+                <a href="restaurant/restaurant.html">
+                    <div class="nav-blocks restaurants">
+                        <img src="/imgs/log-in.svg" alt="">
+                        <p id="log-in" value="login">Рестораны</p>
+                    </div>
+                </a>
+                <div class="language-container">
+                    <div class="uz language" id="uz">uz</div>
+                    <div class="ru language active" id="ru">ru</div>
+                </div>
+                <a href="#" class="call-us-con">
+                    <div class="call-us">
+                        <img src="" alt="">
+                        <p>Позвонить нам</p>
+                    </div>
+                </a>
+                <a href="" class="feedback">Есть жалоба?</a>
+            </div>
+            <div class="burger-container" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <p>Мои заказы</p>
+            <div class="basket">
+                <img src="/imgs/shopping-cart.svg" alt="">
+                <div class="cart-count">
+                    <p id="cart-count">5</p>
+                </div>
+            </div>
+        </nav>
+        <!-- <div class="slider">
+            <img src="" alt="">
+        </div> -->
+    </header>
+    <div class="main-wrapper">
+        <div class="order-histrory-block">
+            <div class="block">
+                <h2 class="order-number">#196</h2>
+                <p class="order-date">2021-04-03 19:49:04</p>
+            </div>
+            <div class="block">
+                <p class="order-name">Пепперони средняя</p>
+                <p class="order-sum">1 шт</p>
+            </div>
+            <hr>
+            <div class="block">
+                <p class="order-address-placeholder placeholder">Адрес</p>
+                <p class="order-address">Tinchlik</p>
+            </div>
+            <div class="block">
+                <h2 class="order-status">closed</h2>
+                <div><p class="order-sum-placeholder placeholder">Итого: </p><h4>52 000 сум</h4></div>
+            </div>
+        </div>
+        <div class="order-histrory-block">
+            <div class="block">
+                <h2 class="order-number">#196</h2>
+                <p class="order-date">2021-04-03 19:49:04</p>
+            </div>
+            <div class="block">
+                <p class="order-name">Пепперони средняя</p>
+                <p class="order-sum">1 шт</p>
+            </div>
+            <hr>
+            <div class="block">
+                <p class="order-address-placeholder placeholder">Адрес</p>
+                <p class="order-address">Tinchlik</p>
+            </div>
+            <div class="block">
+                <h2 class="order-status">closed</h2>
+                <div><p class="order-sum-placeholder placeholder">Итого: </p><h4>52 000 сум</h4></div>
+            </div>
+        </div>
+        <div class="order-histrory-block">
+            <div class="block">
+                <h2 class="order-number">#196</h2>
+                <p class="order-date">2021-04-03 19:49:04</p>
+            </div>
+            <div class="block">
+                <p class="order-name">Пепперони средняя</p>
+                <p class="order-sum">1 шт</p>
+            </div>
+            <hr>
+            <div class="block">
+                <p class="order-address-placeholder placeholder">Адрес</p>
+                <p class="order-address">Tinchlik</p>
+            </div>
+            <div class="block">
+                <h2 class="order-status">closed</h2>
+                <div><p class="order-sum-placeholder placeholder">Итого: </p><h4>52 000 сум</h4></div>
+            </div>
+        </div>
+        <div class="order-histrory-block">
+            <div class="block">
+                <h2 class="order-number">#196</h2>
+                <p class="order-date">2021-04-03 19:49:04</p>
+            </div>
+            <div class="block">
+                <p class="order-name">Пепперони средняя</p>
+                <p class="order-sum">1 шт</p>
+            </div>
+            <hr>
+            <div class="block">
+                <p class="order-address-placeholder placeholder">Адрес</p>
+                <p class="order-address">Tinchlik</p>
+            </div>
+            <div class="block">
+                <h2 class="order-status">closed</h2>
+                <div><p class="order-sum-placeholder placeholder">Итого: </p><h4>52 000 сум</h4></div>
+            </div>
+        </div>
+        <div class="order-histrory-block">
+            <div class="block">
+                <h2 class="order-number">#196</h2>
+                <p class="order-date">2021-04-03 19:49:04</p>
+            </div>
+            <div class="block">
+                <p class="order-name">Пепперони средняя</p>
+                <p class="order-sum">1 шт</p>
+            </div>
+            <hr>
+            <div class="block">
+                <p class="order-address-placeholder placeholder">Адрес</p>
+                <p class="order-address">Tinchlik</p>
+            </div>
+            <div class="block">
+                <h2 class="order-status">closed</h2>
+                <div><p class="order-sum-placeholder placeholder">Итого: </p><h4>52 000 сум</h4></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/app.js"></script>
+</body>
+</html>

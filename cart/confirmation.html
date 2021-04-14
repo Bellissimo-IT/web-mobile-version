@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Оформить</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-items-block" id="nav-block">
+                <div class="logo-container">
+                        <img src="/imgs/logo.svg" alt="">
+                        <div class="logo-text">
+                            <h1>Bellissimo</h1>
+                            <h2>Pizza</h2>
+                        </div>
+                    <div class="burger-cancel" id="burger-cancel">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="nav-blocks location-block">
+                    <div class="current-location-container" id="location-list-activator">
+                        <img src="/imgs/map-pin.svg" alt="">
+                        <p id="current-location-text">Ташкент</p>
+                        <img src="/imgs/arrow.svg" alt="">
+                    </div>
+                    <div class="location-list" id="location-list">
+                        <p id="tashkent" name="tashkent" value="0">Ташкент</p>
+                        <p id="andijan" name="andijan" value="1">Андижан</p>
+                        <p id="samarkand" name="samarkand" value="2">Самарканд</p>
+                    </div>
+                </div>
+                <div class="hr"></div>
+                <a href="log-in/log-in.html">
+                    <div class="nav-blocks log-in">
+                        <img src="/imgs/log-in.svg" alt="">
+                        <p id="log-in" value="login">Войти</p>
+                    </div>
+                </a>
+                <div class="nav-blocks menu" onclick="cancel()">
+                    <img src="/imgs/log-in.svg" alt="">
+                    <p id="log-in" value="login">Меню</p>
+                </div>
+                <a href="construktor/construktor.html">
+                    <div class="nav-blocks construction">
+                        <img src="/imgs/log-in.svg" alt="">
+                        <p id="log-in" value="login">Конструктор половинок</p>
+                    </div>
+                </a>
+                <a href="restaurant/restaurant.html">
+                    <div class="nav-blocks restaurants">
+                        <img src="/imgs/log-in.svg" alt="">
+                        <p id="log-in" value="login">Рестораны</p>
+                    </div>
+                </a>
+                <div class="language-container">
+                    <div class="uz language" id="uz">uz</div>
+                    <div class="ru language active" id="ru">ru</div>
+                </div>
+                <a href="#" class="call-us-con">
+                    <div class="call-us">
+                        <img src="" alt="">
+                        <p>Позвонить нам</p>
+                    </div>
+                </a>
+                <a href="" class="feedback">Есть жалоба?</a>
+            </div>
+            <div class="burger-container" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <p>Оформить</p>
+            <div class="basket">
+                <img src="/imgs/shopping-cart.svg" alt="">
+                <div class="cart-count">
+                    <p id="cart-count">5</p>
+                </div>
+            </div>
+        </nav>
+        <!-- <div class="slider">
+            <img src="" alt="">
+        </div> -->
+    </header>
+    <div class="main-wrapper">
+        <div class="order-address-container">
+            <div class="delivery-takeout-choose">
+                <div class="active"><p>Доставить</p></div>
+                <div><p>Самовывоз</p></div>
+            </div>
+            <button class="input-block address-block active">
+                <img src="" alt="">
+                <div class="input-text address-text">
+                    <h2>Улица Тинчлик, 76</h2><p>Улица Тинчлик, 76</p>
+                </div>
+            </button>
+            <button class="new-order">
+                Новый адрес
+            </button>
+            <div class="take-yourself-addresses-container">
+                <button class="input-block address-block active">
+                    <img src="" alt="">
+                    <div class="input-text address-text">
+                        <h2>Bellissimo Samarqand Darvoza</h2>
+                    </div>
+                </button>
+                <button class="input-block address-block">
+                    <img src="" alt="">
+                    <div class="input-text address-text">
+                        <h2>Bellissimo Samarqand Darvoza</h2>
+                    </div>
+                </button>
+                <button class="input-block address-block">
+                    <img src="" alt="">
+                    <div class="input-text address-text">
+                        <h2>Bellissimo Samarqand Darvoza</h2>
+                    </div>
+                </button>
+                <button class="input-block address-block">
+                    <img src="" alt="">
+                    <div class="input-text address-text">
+                        <h2>Bellissimo Samarqand Darvoza</h2>
+                    </div>
+                </button>
+                <button class="input-block address-block">
+                    <img src="" alt="">
+                    <div class="input-text address-text">
+                        <h2>Bellissimo Samarqand Darvoza</h2>
+                    </div>
+                </button>
+                <button class="input-block address-block">
+                    <img src="" alt="">
+                    <div class="input-text address-text">
+                        <h2>Bellissimo Samarqand Darvoza</h2>
+                    </div>
+                </button>
+                <button class="input-block address-block">
+                    <img src="" alt="">
+                    <div class="input-text address-text">
+                        <h2>Bellissimo Samarqand Darvoza</h2>
+                    </div>
+                </button>
+                <button class="input-block address-block">
+                    <img src="" alt="">
+                    <div class="input-text address-text">
+                        <h2>Bellissimo Samarqand Darvoza</h2>
+                    </div>
+                </button>
+                <button class="input-block address-block">
+                    <img src="" alt="">
+                    <div class="input-text address-text">
+                        <h2>Bellissimo Samarqand Darvoza</h2>
+                    </div>
+                </button>
+                <button class="input-block address-block">
+                    <img src="" alt="">
+                    <div class="input-text address-text">
+                        <h2>Bellissimo Samarqand Darvoza</h2>
+                    </div>
+                </button>
+                <button class="input-block address-block">
+                    <img src="" alt="">
+                    <div class="input-text address-text">
+                        <h2>Bellissimo Samarqand Darvoza</h2>
+                    </div>
+                </button>
+                <button class="input-block address-block">
+                    <img src="" alt="">
+                    <div class="input-text address-text">
+                        <h2>Bellissimo Samarqand Darvoza</h2>
+                    </div>
+                </button>
+                <button class="input-block address-block">
+                    <img src="" alt="">
+                    <div class="input-text address-text">
+                        <h2>Bellissimo Samarqand Darvoza</h2>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="order-time-container">
+            <h2>Способ доставки</h2>
+            <button class="input-block time-variant-block active time-variant-block-one">
+                <img src="" alt="">
+                <div class="input-text address-text">
+                    <h2>Как можно быстрее</h2>
+                </div>
+            </button>
+            <button class="input-block time-variant-block time-variant-block-two">
+                <img src="" alt="">
+                <div class="input-text address-text">
+                    <h2>Ко времени</h2>
+                </div>
+            </button>
+            <div class="time-choose-container">
+                <div class="time-block">
+                    <p>17:00</p>
+                </div>
+                <div class="time-block">
+                    <p>17:00</p>
+                </div>
+                <div class="time-block">
+                    <p>17:00</p>
+                </div>
+                <div class="time-block">
+                    <p>17:00</p>
+                </div>
+                <div class="time-block">
+                    <p>17:00</p>
+                </div>
+                <div class="time-block">
+                    <p>17:00</p>
+                </div>
+                <div class="time-block">
+                    <p>17:00</p>
+                </div>
+                <div class="time-block">
+                    <p>17:00</p>
+                </div>
+                <div class="time-block">
+                    <p>17:00</p>
+                </div>
+                <div class="time-block">
+                    <p>17:00</p>
+                </div>
+                <div class="time-block">
+                    <p>17:00</p>
+                </div>
+                <div class="time-block">
+                    <p>17:00</p>
+                </div>
+                <div class="time-block">
+                    <p>17:00</p>
+                </div>
+                <div class="time-block">
+                    <p>17:00</p>
+                </div>
+                <div class="time-block">
+                    <p>17:00</p>
+                </div>
+                <div class="time-block">
+                    <p>17:00</p>
+                </div>
+            </div>
+            <p>* Фактическая время доставки может отличатся на 5-10 минут</p>
+        </div>
+        <button class="next">Далее</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

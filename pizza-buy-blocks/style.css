@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Jost', sans-serif;
+}
+
+.main-wrapper {
+  padding-bottom: 25px;
+  width: 100%;
+  max-width: 450px;
+  min-width: 400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main-wrapper .text {
+  padding: 0 20px;
+}
+
+.main-wrapper .back-btn {
+  width: 50px;
+  height: 50px;
+  background: white;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  top: 10px;
+  left: 10px;
+}
+
+.main-wrapper .back-btn img {
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 18px;
+  height: auto;
+}
+
+.main-wrapper img {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.main-wrapper .product-name {
+  margin-bottom: 15px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 140%;
+  color: #323232;
+}
+
+.main-wrapper .product-descritpion {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 150%;
+  color: #323232;
+  margin-bottom: 15px;
+}
+
+.main-wrapper .choose-size-container h5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 17px;
+  color: #c8c8c8;
+  margin-bottom: 10px;
+}
+
+.main-wrapper .choose-size-container .constract-block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F8F8F8), to(#F5F5F5));
+  background: linear-gradient(180deg, #F8F8F8 0%, #F5F5F5 100%);
+  border-radius: 100px;
+  margin-bottom: 25px;
+  height: 40px;
+  padding: 0 3px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-wrapper .choose-size-container .constract-block .type {
+  width: 100%;
+  text-align: center;
+  max-width: 33.33%;
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: transparent;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 17px;
+  color: #c8c8c8;
+  height: calc(100% - 6px);
+}
+
+.main-wrapper .choose-size-container .constract-block .type.active {
+  -webkit-box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  background: white;
+  color: #323232;
+  font-weight: bold;
+}
+
+.main-wrapper .price-n-cart-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-wrapper .price-n-cart-btn .price-block p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+  color: #323232;
+}
+
+.main-wrapper .price-n-cart-btn button {
+  background: #00AB49;
+  -webkit-box-shadow: 0px 15px 30px rgba(0, 171, 73, 0.25);
+          box-shadow: 0px 15px 30px rgba(0, 171, 73, 0.25);
+  border-radius: 100px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 17px;
+  color: #FFFFFF;
+  border: none;
+  padding: 16px;
+}
+
+.main-wrapper .choose-type-wrapper.one .type {
+  max-width: 100% !important;
+}
+
+.main-wrapper .choose-type-wrapper.two .type {
+  max-width: 50% !important;
+}
+
+.main-wrapper .choose-type-wrapper.three .type {
+  max-width: 33.33% !important;
+}
+/*# sourceMappingURL=style.css.map */
