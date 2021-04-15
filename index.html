@@ -5,10 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-    <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
-    <link rel="stylesheet" href="path-to-the-file/splide.min.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     
     <title>Bellissimo Pizza Mobile</title>
 </head>
@@ -134,14 +131,15 @@
                 <img src="" alt="">
             </div> -->
         </header>
-        <div class="splide" data-splide='{"type":"loop","perPage":1, "arrowPath": false}'>
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <li class="splide__slide"><img src="" alt=""></li>
-                    
-                </ul>
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="image.png" alt=""></div>
+              <div class="swiper-slide"><img src="image.png" alt=""></div>
+              <div class="swiper-slide"><img src="image.png" alt=""></div>
             </div>
-        </div>
+          </div>
         <a name="pizza"></a>
         <section class="pizza-list-container">
             <div class="list-title">
@@ -462,11 +460,16 @@
 
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
+
     <script>
-        new Splide( '.splide' ).mount();
+        const swiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    centeredSlides: true,
+  });
     </script>
 </body>
 </html>

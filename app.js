@@ -90,3 +90,4 @@ cancelBtn.onclick = function() {
     floatBlockBg.classList.remove('active'),
     floatBlockCon.classList.remove('active');
 }
+
