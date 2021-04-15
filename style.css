@@ -966,6 +966,7 @@ header nav .basket .cart-count {
 }
 
 .restaunrant-list-contanier li {
+  height: 115px;
   max-width: 450px;
   margin: 10px auto;
   display: -webkit-box;
