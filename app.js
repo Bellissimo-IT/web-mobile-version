@@ -1,12 +1,14 @@
 let nav = document.getElementById('nav-block'), burger = document.getElementById('burger'), burgerCancel = document.getElementById('burger-cancel');
-let fixedCart = document.querySelector('.fixed-cart-container');
+let fixedCart = document.querySelector('.fixed-cart-container'), body = document.querySelector('body');
 burger.onclick = function(e) {
     console.log(e);
     nav.classList.add('active');
+    body.style.overflow = "hidden";
 }
 
 burgerCancel.onclick = function() {
     nav.classList.remove('active');
+    body.style.overflow = "inherit";
 }
 
 function cancel() {
